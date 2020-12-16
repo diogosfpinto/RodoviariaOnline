@@ -1,0 +1,23 @@
+{
+  "name": "rodoviariaonline",
+  "version": "1.0.0",
+  "description": "Rodoviária Online",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogosfpinto/RodoviariaOnline.git"
+  },
+  "author": "Diogo Farias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diogosfpinto/RodoviariaOnline/issues"
+  },
+  "homepage": "https://github.com/diogosfpinto/RodoviariaOnline#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
