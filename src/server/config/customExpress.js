@@ -3,5 +3,5 @@ const app = express();
 
 module.exports = app;
 
-const route = require('../app/routes/route-index');
+const route = require('../routes/route-index');
 route(app);
