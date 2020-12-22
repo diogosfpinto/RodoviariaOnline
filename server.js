@@ -1,3 +1,11 @@
-const app = require('./src/server/config/customExpress');
+const app = require('./src/server/config/customExpress'),
+    conexao = require('./src/server/infraestrutura/conexao');
 
-app.listen(3000, () => {console.log('Servidor rodando na porta 3000.')});
+    
+    conexao.connect((erro) => {
+        if (erro) {
+            console.log(erro);
+        } else {
+            app.listen(3000, () => {console.log('Servidor rodando na porta 3000.')});
+    }
+});
