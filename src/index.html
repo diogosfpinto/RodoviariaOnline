@@ -27,7 +27,7 @@
                 <input type="submit" value="Buscar">
             </form>
             
-            <table>
+            <table class="lista-viagens">
                 <thead>
                     <td>Data Saída</td>
                     <td>Origem</td>
@@ -47,6 +47,12 @@
                         <td>Rondonópolis - MT</td>
                         <td><button>Comprar</button></td>
                     </tr>
+                    <tr class="lista-viagens__linha">
+                        <td class="lista-viagens__data-saida"></td>
+                        <td class="lista-viagens__origem"></td>
+                        <td class="lista-viagens__destino"></td>
+                        <td class="lista-viagens__bt-comprar"><button>Comprar</button></td>
+                    </tr>
                 </tbody>
             </table>
         </main>
@@ -54,6 +60,7 @@
             <h2>Rodoviária Online</h2>
         </footer>
 
-        <script src="./viagens-api.js"></script>
+        <script src="./api/viagens-api.js"></script>
+        <script src="./lista-viagens.js"></script>
     </body>
 </html>
