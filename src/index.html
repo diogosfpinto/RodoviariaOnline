@@ -27,33 +27,14 @@
                 <input type="submit" value="Buscar">
             </form>
             
-            <table class="lista-viagens">
+            <table class="lista-viagens table table-light table-hover">
                 <thead>
-                    <td>Data Saída</td>
-                    <td>Origem</td>
-                    <td>Destino</td>
-                    <td></td>
+                    <td scope="col">Data Saída</td>
+                    <td scope="col">Origem</td>
+                    <td scope="col">Destino</td>
+                    <td scope="col"></td>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>24/11/2020 05:00</td>
-                        <td>Rondonópolis - MT</td>
-                        <td>Cuiabá - MT</td>
-                        <td><button>Comprar</button></td>
-                    </tr>
-                    <tr>
-                        <td>27/11/2020 23:00</td>
-                        <td>Poxoréu - MT</td>
-                        <td>Rondonópolis - MT</td>
-                        <td><button>Comprar</button></td>
-                    </tr>
-                    <tr class="lista-viagens__linha">
-                        <td class="lista-viagens__data-saida"></td>
-                        <td class="lista-viagens__origem"></td>
-                        <td class="lista-viagens__destino"></td>
-                        <td class="lista-viagens__bt-comprar"><button>Comprar</button></td>
-                    </tr>
-                </tbody>
+                <tbody class="lista-viagens__itens"></tbody>
             </table>
         </main>
         <footer>

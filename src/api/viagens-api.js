@@ -1,5 +1,5 @@
 const listarViagens = () => {
-    return fetch('http://localhost:3000/lista')
+    return fetch('http://localhost:4000/lista')
     .then(resposta => {
         return resposta.json();
     })
