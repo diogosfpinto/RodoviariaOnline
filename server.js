@@ -1,5 +1,5 @@
 const app = require('./server/config/customExpress'),
-    conexao = require('./server/infraestrutura/conexao');
+    conexao = require('./server/config/conexao');
 
     
     conexao.connect((erro) => {

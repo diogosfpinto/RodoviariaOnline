@@ -1,4 +1,4 @@
-const conexao = require('../infraestrutura/conexao');
+const conexao = require('../config/conexao');
 
 class Viagens {
     lista(res){
