@@ -10,39 +10,32 @@
             <h1>Rodoviária Online</h1>
             <a href="#"><button class="btn btn-primary">Entrar</button></a>
             <a href="#"><button class="btn btn-secondary">Cadastrar-se</button></a>
-            <a href="/adiciona-viagem.html">Adicionar novo trajeto</a>
         </header>
         <main>
-            <h2>Visualize abaixo todas viagens disponíveis para compra</h2>
+            <h2>Adicionar novo trajeto de viagem</h2>
 
-            <form>
+            <form method="POST" action="/cadastro-novo-trajeto">
                 <label for="origem">Origem:</label>
                 <input type="text" name="origem" id="origem">
 
                 <label for="Destino">Destino:</label>
-                <input type="text" name="Destino" id="Destino">
+                <input type="text" name="destino" id="Destino">
 
                 <label for="dataSaida">Data de Saída:</label>
                 <input type="date" name="dataSaida" id="dataSaida">
+                
+                <label for="dataChegada">Data de Chegada:</label>
+                <input type="date" name="dataChegada" id="dataChegada">
 
-                <input type="submit" value="Buscar">
+                <label for="vagasDisponiveis">Quantidade de vagas disponibilizadas:</label>
+                <input type="number" name="vagasDisponiveis" id="vagasDisponiveis">
+
+                <input type="submit" value="Enviar">
             </form>
             
-            <table class="lista-viagens table table-light table-hover">
-                <thead>
-                    <td scope="col">Data Saída</td>
-                    <td scope="col">Origem</td>
-                    <td scope="col">Destino</td>
-                    <td scope="col"></td>
-                </thead>
-                <tbody class="lista-viagens__itens"></tbody>
-            </table>
         </main>
         <footer>
             <h2>Rodoviária Online</h2>
         </footer>
-
-        <script src="./api/viagens-api.js"></script>
-        <script src="./lista-viagens.js"></script>
     </body>
 </html>
