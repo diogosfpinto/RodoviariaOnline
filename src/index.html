@@ -6,11 +6,13 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
     <body>
-        <header class="container-fluid">
-            <h1>Rodoviária Online</h1>
-            <a href="#"><button class="btn btn-primary">Entrar</button></a>
-            <a href="#"><button class="btn btn-secondary">Cadastrar-se</button></a>
-            <a href="/adiciona-viagem.html">Adicionar novo trajeto</a>
+        <header class="container-fluid p-3 d-flex justify-content-between">
+            <h1 class="">Rodoviária Online</h1>
+            <div>
+                <a href="#"><button class="btn btn-primary">Entrar</button></a>
+                <a href="#"><button class="btn btn-secondary">Cadastrar-se</button></a>
+                <a href="/adiciona-viagem.html">Adicionar novo trajeto</a>
+            </div>
         </header>
         <main class="container">
             <h2>Escolha para onde é seu destino!</h2>
@@ -43,8 +45,8 @@
             </div>
             
         </main>
-        <footer class="container-fluid">
-            <h2>Rodoviária Online</h2>
+        <footer class="container-fluid p-3 d-flex justify-content-center">
+            <h2 class="d-block-center ps-0 pe-0">Rodoviária Online</h2>
         </footer>
 
         <script src="./api/viagens-api.js"></script>
