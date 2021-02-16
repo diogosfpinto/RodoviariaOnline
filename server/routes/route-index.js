@@ -1,4 +1,6 @@
-const viagens = require('../models/viagens');
+const ViagensDao = require('../infraestrutura/ViagensDao');
+
+const daoViagem = new ViagensDao();
 
 module.exports = (app) => {
 
@@ -9,6 +11,6 @@ module.exports = (app) => {
     });
 
     app.get('/lista', (req, resp) => {
-        viagens.lista(resp);
+        daoViagem.lista(resp);
     });
 }

@@ -1,14 +1,22 @@
+const conexao = require('../config/conexao');
+
 class ViagensDao {
 
-    constructor(db) {
-        this._db = db;
-    }
+    lista(res){
+        const sql = 'SELECT * FROM viagens';
 
-    lista(){
-
+        conexao.query(sql, (erro, resultados) => {
+            if (erro) {
+                res.status(400).json(erro);
+            } else {
+                res.status(200).json(resultados);
+            }
+        })
     }
 
     adiciona(){
         
     }
 }
+
+module.exports = ViagensDao;
