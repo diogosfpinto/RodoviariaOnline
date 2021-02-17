@@ -2,44 +2,55 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <!-- <meta name="viewport" content="width=device-width initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
     <body>
-        <header>
-            <h1>Rodoviária Online</h1>
-            <a href="#"><button class="btn btn-primary">Entrar</button></a>
-            <a href="#"><button class="btn btn-secondary">Cadastrar-se</button></a>
-            <a href="/adiciona-viagem.html">Adicionar novo trajeto</a>
+        <header class="container-fluid p-3 d-flex justify-content-between">
+            <h1 class="">Rodoviária Online</h1>
+            <div>
+                <a href="#"><button class="btn btn-primary">Entrar</button></a>
+                <a href="#"><button class="btn btn-secondary">Cadastrar-se</button></a>
+                <a href="/adiciona-viagem.html">Adicionar novo trajeto</a>
+            </div>
         </header>
-        <main>
-            <h2>Visualize abaixo todas viagens disponíveis para compra</h2>
+        <main class="container">
+            <h2>Escolha para onde é seu destino!</h2>
 
-            <form>
-                <label for="origem">Origem:</label>
-                <input type="text" name="origem" id="origem">
+            <div class="row">            
+                <form class="col">
+                    <label for="origem" class="form-label">Origem:</label>
+                    <input type="text"  class="form-control" name="origem" id="origem">
+    
+                    <label for="Destino" class="form-label">Destino:</label>
+                    <input type="text" class="form-control" name="Destino" id="Destino">
+    
+                    <label for="dataSaida" class="form-label">Data de Saída:</label>
+                    <input type="date" class="form-control" name="dataSaida" id="dataSaida">
+    
+                    <input type="submit" class="btn-sm btn-primary mb-3 mt-3" value="Buscar">
+                </form>
 
-                <label for="Destino">Destino:</label>
-                <input type="text" name="Destino" id="Destino">
+                <img src="img/vantagens-onibus.png" class="col">
+            </div>
 
-                <label for="dataSaida">Data de Saída:</label>
-                <input type="date" name="dataSaida" id="dataSaida">
+            <h2>Visualize abaixo todos os destinos disponíveis</h2>
 
-                <input type="submit" value="Buscar">
-            </form>
+            <div class="table-responsive">
+                <table class="lista-viagens table table-light table-hover">
+                    <thead>
+                        <td scope="col">Data Saída</td>
+                        <td scope="col">Origem</td>
+                        <td scope="col">Destino</td>
+                        <td scope="col"></td>
+                    </thead>
+                    <tbody class="lista-viagens__itens"></tbody>
+                </table>
+            </div>
             
-            <table class="lista-viagens table table-light table-hover">
-                <thead>
-                    <td scope="col">Data Saída</td>
-                    <td scope="col">Origem</td>
-                    <td scope="col">Destino</td>
-                    <td scope="col"></td>
-                </thead>
-                <tbody class="lista-viagens__itens"></tbody>
-            </table>
         </main>
-        <footer>
-            <h2>Rodoviária Online</h2>
+        <footer class="container-fluid p-3 d-flex justify-content-center">
+            <h2 class="d-block-center ps-0 pe-0">Rodoviária Online</h2>
         </footer>
 
         <script src="./api/viagens-api.js"></script>
