@@ -3,7 +3,7 @@ const conexao = require('../config/conexao');
 class ViagensDao {
 
     lista(res){
-        const sql = 'SELECT * FROM viagens';
+        const sql = 'SELECT * FROM viagens WHERE vagasDisponiveis > 0;';
 
         conexao.query(sql, (erro, resultados) => {
             if (erro) {
