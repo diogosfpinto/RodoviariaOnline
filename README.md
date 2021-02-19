@@ -6,33 +6,32 @@ Requisitos para execução do projeto:
 
 * NodeJs 10.15.1 ou superior;
 
-Para visualizar o projeto em execução após o donwload do projeto:
+## Passo para visualizar o projeto em execução:
 
-<<<<<<< HEAD
+Execute o comando abaixo no prompt para fazer o download das dependências
+
 ```
  npm install 
- 
 ```
-=======
-# npm install
->>>>>>> 43ca0402c910337546f18a78b616113c5fda0404
 
-Após o download das dependencias, inicie o servidor com:
+Após o download, inicie o servidor com:
 
-# npm start
+```
+npm start
+```
 
 No navegador, entre no site abaixo:
 
 http://localhost:3000/
 
 
-Recursos utilizados:
+ ## Recursos utilizados:
 
     * Javascript;
     * NodeJs;
     * MySQL;
 
-Libs utilizadas:
+ ## Libs utilizadas:
 
     * Express;
     * Nodemon;
