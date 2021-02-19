@@ -8,10 +8,14 @@ Requisitos para execução do projeto:
 
 Para visualizar o projeto em execução após o donwload do projeto:
 
+<<<<<<< HEAD
 ```
  npm install 
  
 ```
+=======
+# npm install
+>>>>>>> 43ca0402c910337546f18a78b616113c5fda0404
 
 Após o download das dependencias, inicie o servidor com:
 
